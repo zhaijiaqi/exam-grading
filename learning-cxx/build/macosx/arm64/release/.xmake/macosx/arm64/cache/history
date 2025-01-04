@@ -38,6 +38,18 @@
         "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise15",
         "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise15",
         "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise16",
-        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise16"
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise16",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise10",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise11",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise11",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise13",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise13"
     }
 }
