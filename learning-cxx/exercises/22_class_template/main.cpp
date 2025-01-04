@@ -1,19 +1,17 @@
 ﻿#include "../exercise.h"
+#include <cstring>
 
 // READ: 类模板 <https://zh.cppreference.com/w/cpp/language/class_template>
 
 template<class T>
 struct Tensor4D {
     unsigned int shape[4];
-    T* data;
+    T *data;
 
-    Tensor4D(unsigned int const shape_[4], T const* data_) {
-        unsigned int size = 1;
-        std::memcpy(shape, shape_, sizeof(unsigned int) * 4);
+    Tensor4D(unsigned int const shape_[4], T const *data_) {
+        unsigned int size = shape_[0] * shape_[1] * shape_[2] * shape_[3];
         // TODO: 填入正确的 shape 并计算 size
-        for (int i = 0;i < 4;i++) {
-            size *= shape_[i];
-        }
+        std::memcpy(shape, shape_, 4 * sizeof(unsigned int));
         data = new T[size];
         std::memcpy(data, data_, size * sizeof(T));
     }
@@ -22,8 +20,8 @@ struct Tensor4D {
     }
 
     // 为了保持简单，禁止复制和移动
-    Tensor4D(Tensor4D const&) = delete;
-    Tensor4D(Tensor4D&&) noexcept = delete;
+    Tensor4D(Tensor4D const &) = delete;
+    Tensor4D(Tensor4D &&) noexcept = delete;
 
     // 这个加法需要支持“单向广播”。
     // 具体来说，`others` 可以具有与 `this` 不同的形状，形状不同的维度长度必须为 1。
@@ -50,7 +48,6 @@ struct Tensor4D {
         return *this;
     }
 };
-
 
 // ---- 不要修改以下代码 ----
 int main(int argc, char **argv) {

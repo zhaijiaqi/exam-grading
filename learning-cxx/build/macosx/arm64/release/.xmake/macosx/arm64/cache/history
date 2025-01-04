@@ -1,15 +1,5 @@
 {
     cmdlines = {
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
-        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise23",
         "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise23",
         "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise23",
         "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise23",
@@ -64,6 +54,16 @@
         "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise32",
         "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise32",
         "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise33",
-        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise33"
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise33",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise26",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise26",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise22",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise20",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise20",
+        "xmake -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise20",
+        "xmake run -P /Users/halo/Documents/code/exam-grading/learning-cxx/exercises exercise20"
     }
 }
