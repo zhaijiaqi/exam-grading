@@ -1,87 +1,227 @@
 {
-    tool_target_exercise08_macosx_arm64_ld = {
-        toolchain_info = {
-            name = "xcode",
-            plat = "macosx",
-            cachekey = "xcode_arch_arm64_plat_macosx",
-            arch = "arm64"
-        },
-        toolname = "clangxx",
-        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
-    },
-    xcode_arch_arm64_plat_macosx = {
-        __checked = true,
-        xcode_sdkver = "15.2",
-        xcode_sysroot = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
-        __global = true,
-        xcode = "/Applications/Xcode.app",
-        bindir = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
-        plat = "macosx",
-        target_minver = "15.1",
-        arch = "arm64"
-    },
     envs_arch_arm64_plat_macosx = {
         __checked = true,
-        plat = "macosx",
         __global = true,
-        arch = "arm64"
-    },
-    rust_arch_arm64_plat_macosx = {
-        __checked = true,
-        plat = "macosx",
-        __global = true,
-        arch = "arm64"
+        arch = "arm64",
+        plat = "macosx"
     },
     tool_target_exercise08_macosx_arm64_cxx = {
+        toolname = "clang",
         toolchain_info = {
-            name = "xcode",
+            arch = "arm64",
             plat = "macosx",
             cachekey = "xcode_arch_arm64_plat_macosx",
-            arch = "arm64"
+            name = "xcode"
         },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    tool_target_exercise13_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    tool_target_exercise15_macosx_arm64_cxx = {
         toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            plat = "macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    fpc_arch_arm64_plat_macosx = {
+        __checked = true,
+        __global = true,
+        arch = "arm64",
+        plat = "macosx"
+    },
+    tool_target_exercise15_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            plat = "macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    gfortran_arch_arm64_plat_macosx = {
+        __checked = true,
+        __global = true,
+        arch = "arm64",
+        plat = "macosx"
+    },
+    tool_target_exercise16_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            name = "xcode",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    tool_target_exercise10_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    cuda_arch_arm64_plat_macosx = {
+        __checked = true,
+        __global = true,
+        arch = "arm64",
+        plat = "macosx"
+    },
+    tool_target_exercise10_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    tool_target_exercise14_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    tool_target_exercise08_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    tool_target_exercise11_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    yasm_arch_arm64_plat_macosx = {
+        __checked = true,
+        __global = true,
+        arch = "arm64",
+        plat = "macosx"
+    },
+    xcode_arch_arm64_plat_macosx = {
+        target_minver = "15.1",
+        arch = "arm64",
+        xcode_sysroot = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        bindir = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+        xcode_sdkver = "15.2",
+        plat = "macosx",
+        __checked = true,
+        xcode = "/Applications/Xcode.app",
+        __global = true
+    },
+    go_arch_arm64_plat_macosx = {
+        __checked = true,
+        __global = true,
+        arch = "arm64",
+        plat = "macosx"
+    },
+    tool_target_exercise12_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            plat = "macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    tool_target_exercise16_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            name = "xcode",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    tool_target_exercise12_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            plat = "macosx",
+            name = "xcode"
+        },
         program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
     },
     nim_arch_arm64_plat_macosx = {
         __checked = false,
-        plat = "macosx",
         __global = true,
-        arch = "arm64"
+        arch = "arm64",
+        plat = "macosx"
     },
-    go_arch_arm64_plat_macosx = {
+    tool_target_exercise14_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    rust_arch_arm64_plat_macosx = {
         __checked = true,
-        plat = "macosx",
         __global = true,
-        arch = "arm64"
+        arch = "arm64",
+        plat = "macosx"
+    },
+    tool_target_exercise11_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    tool_target_exercise13_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
     },
     nasm_arch_arm64_plat_macosx = {
         __checked = true,
-        plat = "macosx",
         __global = true,
-        arch = "arm64"
-    },
-    yasm_arch_arm64_plat_macosx = {
-        __checked = true,
-        plat = "macosx",
-        __global = true,
-        arch = "arm64"
-    },
-    gfortran_arch_arm64_plat_macosx = {
-        __checked = true,
-        plat = "macosx",
-        __global = true,
-        arch = "arm64"
-    },
-    fpc_arch_arm64_plat_macosx = {
-        __checked = true,
-        plat = "macosx",
-        __global = true,
-        arch = "arm64"
-    },
-    cuda_arch_arm64_plat_macosx = {
-        __checked = true,
-        plat = "macosx",
-        __global = true,
-        arch = "arm64"
+        arch = "arm64",
+        plat = "macosx"
     }
 }

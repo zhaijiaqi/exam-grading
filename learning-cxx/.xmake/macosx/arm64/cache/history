@@ -1,5 +1,24 @@
 {
     cmdlines = {
-        "xmake run learn 8"
+        "xmake run learn 8",
+        "xmake run learn 8",
+        "xmake run learn 10",
+        "xmake run learn 11",
+        "xmake run learn 12",
+        "xmake run learn 12",
+        "xmake run learn 12",
+        "xmake run learn 12",
+        "xmake run learn 12",
+        "xmake run learn 13",
+        "xmake run learn 14",
+        "xmake run learn 14",
+        "xmake run learn 14",
+        "xmake run learn 14",
+        "xmake run learn 14",
+        "xmake run learn 15",
+        "xmake run learn 15",
+        "xmake run learn 15",
+        "xmake run learn 15",
+        "xmake run learn 16"
     }
 }
