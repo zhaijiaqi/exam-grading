@@ -1,0 +1,87 @@
+{
+    tool_target_exercise08_macosx_arm64_ld = {
+        toolchain_info = {
+            name = "xcode",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            arch = "arm64"
+        },
+        toolname = "clangxx",
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    xcode_arch_arm64_plat_macosx = {
+        __checked = true,
+        xcode_sdkver = "15.2",
+        xcode_sysroot = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        __global = true,
+        xcode = "/Applications/Xcode.app",
+        bindir = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+        plat = "macosx",
+        target_minver = "15.1",
+        arch = "arm64"
+    },
+    envs_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    rust_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    tool_target_exercise08_macosx_arm64_cxx = {
+        toolchain_info = {
+            name = "xcode",
+            plat = "macosx",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            arch = "arm64"
+        },
+        toolname = "clang",
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    nim_arch_arm64_plat_macosx = {
+        __checked = false,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    go_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    nasm_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    yasm_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    gfortran_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    fpc_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    },
+    cuda_arch_arm64_plat_macosx = {
+        __checked = true,
+        plat = "macosx",
+        __global = true,
+        arch = "arm64"
+    }
+}

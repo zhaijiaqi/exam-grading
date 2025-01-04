@@ -1,0 +1,10 @@
+{
+    errdata = "\27[1mlearn/test.cpp:33:10: \27[0m\27[0;1;35mwarning: \27[0m\27[1m'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]\27[0m\
+   33 |     std::sprintf(str, \"exercise%02d\", n);\27[0m\
+      | \27[0;1;32m         ^\
+\27[0m\27[1m/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/_stdio.h:274:16: \27[0m\27[0;1;30mnote: \27[0m'sprintf' has been explicitly marked deprecated here\27[0m\
+  274 | __attribute__((__deprecated__(\"This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.\")))\27[0m\
+      | \27[0;1;32m               ^\
+\27[0m1 warning generated.\
+"
+}

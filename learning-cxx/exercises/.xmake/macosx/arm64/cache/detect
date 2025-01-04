@@ -1,0 +1,5 @@
+{
+    find_program = {
+        git = "/opt/homebrew/bin/git"
+    }
+}

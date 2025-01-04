@@ -1,0 +1,127 @@
+{
+    xcode_arch_arm64_plat_macosx = {
+        __checked = true,
+        xcode = "/Applications/Xcode.app",
+        xcode_sdkver = "15.2",
+        xcode_sysroot = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk",
+        __global = true,
+        bindir = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+        target_minver = "15.1",
+        plat = "macosx",
+        arch = "arm64"
+    },
+    yasm_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    },
+    tool_target_test_macosx_arm64_ar = {
+        toolname = "ar",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode",
+            plat = "macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar"
+    },
+    tool_target_learn_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode",
+            plat = "macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    rust_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    },
+    tool_target_test_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode",
+            plat = "macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    envs_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    },
+    cuda_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    },
+    tool_target_learn_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode",
+            plat = "macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    nasm_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    },
+    gfortran_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    },
+    tool_target_summary_macosx_arm64_cxx = {
+        toolname = "clang",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode",
+            plat = "macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
+    },
+    nim_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = false
+    },
+    fpc_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    },
+    tool_target_summary_macosx_arm64_ld = {
+        toolname = "clangxx",
+        toolchain_info = {
+            arch = "arm64",
+            cachekey = "xcode_arch_arm64_plat_macosx",
+            name = "xcode",
+            plat = "macosx"
+        },
+        program = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
+    },
+    go_arch_arm64_plat_macosx = {
+        arch = "arm64",
+        __global = true,
+        plat = "macosx",
+        __checked = true
+    }
+}
