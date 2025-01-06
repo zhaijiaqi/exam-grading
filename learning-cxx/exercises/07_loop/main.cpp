@@ -2,6 +2,7 @@
 
 // TODO: 改正函数实现，实现正确的缓存优化斐波那契计算
 // THINk: 这个函数是一个纯函数（pure function）吗？
+// ANSWER: 是，因为这个函数没有副作用，只是根据输入参数计算返回值。
 // READ: 纯函数 <https://zh.wikipedia.org/wiki/%E7%BA%AF%E5%87%BD%E6%95%B0>
 static unsigned long long fibonacci(int i) {
     // TODO: 为缓存设置正确的初始值

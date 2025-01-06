@@ -52,8 +52,10 @@ int main(int argc, char **argv) {
     ASSERT(d.direct_name() == 'D', MSG);
 
 
-
-    A &rab = b;
+    // 父类引用指向子类对象
+    // 调用虚函数时，会调用子类的虚函数
+    // 调用非虚函数时，会调用父类的非虚函数
+    A& rab = b;
     B &rbc = c;
     C &rcd = d;
 

@@ -5,7 +5,7 @@
 #include <vector>
 
 // READ: `std::unique_ptr` <https://zh.cppreference.com/w/cpp/memory/unique_ptr>
-
+// std::unique_ptr 是一个独占所有权的智能指针，它允许一个对象管理另一个对象的生命周期。
 std::vector<std::string> RECORDS;
 
 class Resource {
@@ -26,7 +26,7 @@ Unique reset(Unique ptr) {
     if (ptr) {
         ptr->record('r');
     }
-    return std::make_unique<Resource>();
+    return std::make_unique<Resource>();    // std::make_unique 用于动态分配内存并创建一个 std::unique_ptr 对象。
 }
 Unique drop(Unique ptr) {
     if (ptr) {
@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
     std::vector<std::string> problems[3];
 
     drop(forward(reset(nullptr)));
-    problems[0] = std::move(RECORDS);
+    problems[0] = std::move(RECORDS);   // std::move 用于将左值转换为右值引用，用于移动语义，RECORDS 的所有权转移给 problems[0]，移动后 RECORDS 变为空
 
     forward(drop(reset(forward(forward(reset(nullptr))))));
     problems[1] = std::move(RECORDS);

@@ -23,8 +23,8 @@ public:
     // TODO: 实现复制构造器
     DynFibonacci(DynFibonacci const& df) {
         this->cached = df.cached;
-        this->cache = new size_t[df.cached];    // 深拷贝
-        for (int i = 0;i < df.cached;i++) {
+        this->cache = new size_t[df.cached];    // 深拷贝，深拷贝和浅拷贝的概念是针对指针的，浅拷贝只是拷贝了指针，深拷贝拷贝了指针指向的内容
+        for (int i = 0;i < df.cached;i++) {     // 深拷贝的代价比较高昂
             this->cache[i] = df.cache[i];
         }
     };

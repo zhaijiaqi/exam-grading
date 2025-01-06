@@ -60,6 +60,9 @@
         "variant": "cpp",
         "vector": "cpp",
         "__config": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "iterator": "cpp",
+        "filesystem": "cpp",
+        "type_traits": "cpp"
     }
 }

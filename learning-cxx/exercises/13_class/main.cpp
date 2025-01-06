@@ -14,7 +14,7 @@ class Fibonacci {
 
 public:
     // TODO: 实现构造器
-    Fibonacci() : cache{0,1}, cached(2) {}
+    Fibonacci() : cache{0,1}, cached(2) {}  // 构造函数初始化列表
 
     // TODO: 实现正确的缓存优化斐波那契计算
     size_t get(int i) {

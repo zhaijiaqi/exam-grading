@@ -52,7 +52,8 @@ int main(int argc, char **argv) {
     // TODO: 补全三个类型的大小
     static_assert(sizeof(X) == sizeof(int), "There is an int in X");
     static_assert(sizeof(A) == sizeof(int), "There is an int in A");
-    static_assert(sizeof(B) == sizeof(A)+sizeof(X), "B is an A with an X");
+    // 继承中的对象模型：子类继承父类所有属性，因此sizeof(B) = sizeof(A) + sizeof(X)
+    static_assert(sizeof(B) == sizeof(A) + sizeof(X), "B is an A with an X");
 
     i = 0;
     std::cout << std::endl

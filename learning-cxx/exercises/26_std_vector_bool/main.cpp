@@ -28,6 +28,8 @@ int main(int argc, char **argv) {
         ref = false;
         ASSERT(!ref, "Fill in `ref` or `!ref`");
         // THINK: WHAT and WHY?
+        // 这是因为 std::vector<bool> 的实现是使用位域，所以返回的是一个引用（对象），而不是一个 bool 类型的值
+        // 所以 ref = false; 会改变 vec[30] 的值
         ASSERT(!vec[30], "Fill in `vec[30]` or `!vec[30]`.");
     }
     return 0;

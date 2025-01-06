@@ -3,6 +3,15 @@
 #include <vector>
 
 // READ: std::vector <https://zh.cppreference.com/w/cpp/container/vector>
+// std::vector 是一个模板类，需要指定元素类型
+// std::vector 的大小是动态的，支持动态改变大小
+// std::vector 的大小可以通过 size() 获取，表示当前元素个数
+// std::vector 的容量可以通过 capacity() 获取，表示当前内存分配大小，大于等于 size()
+// std::vector 是由3个指针组成的结构体，所以 sizeof(std::vector) == 24
+// std::vector 的元素可以通过 data() 获取指针
+// std::vector 的元素可以通过 [下标] 或 at() 访问元素
+
+
 
 // TODO: 将下列 `?` 替换为正确的代码
 int main(int argc, char **argv) {
@@ -40,13 +49,14 @@ int main(int argc, char **argv) {
         }
         {
             // THINK: `std::vector` 插入删除的时间复杂度是什么？
-            vec.insert(vec.begin()+1, 1.5);
+            // 插入的时间复杂度是 O(n)，因为 std::vector 为了高效的随机访问，数据是连续存储的
+            vec.insert(vec.begin() + 1, 1.5);
             ASSERT((vec == std::vector<double>{1, 1.5, 2, 3, 4, 6}), "Make this assertion pass.");
             vec.erase(vec.begin()+3);
             ASSERT((vec == std::vector<double>{1, 1.5, 2, 4, 6}), "Make this assertion pass.");
         }
         {
-            vec.shrink_to_fit();
+            vec.shrink_to_fit();    // 调整 std::vector 的容量，以使其大小正好等于当前的元素个数。
             ASSERT(vec.capacity() == 5, "Fill in the correct value.");
             vec.clear();
             ASSERT(vec.empty(), "`vec` is empty now.");

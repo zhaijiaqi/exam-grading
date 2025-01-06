@@ -8,6 +8,9 @@
 // 例如，一个 2x3x4 张量，其步长为 [12, 4, 1]。
 
 // READ: 类型别名 <https://zh.cppreference.com/w/cpp/language/type_alias>
+// 定义别名关键字有：typedef、using
+// using 用法：using 别名 = 类型
+// typedef 用法：typedef 类型 别名
 using udim = unsigned int;
 
 /// @brief 计算连续存储张量的步长

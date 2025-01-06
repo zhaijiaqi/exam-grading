@@ -1,5 +1,6 @@
 {
     find_program = {
-        git = "/opt/homebrew/bin/git"
+        git = "/opt/homebrew/bin/git",
+        ping = "/sbin/ping"
     }
 }

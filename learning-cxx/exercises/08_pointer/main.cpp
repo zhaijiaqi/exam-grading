@@ -9,7 +9,9 @@ bool is_fibonacci(int *ptr, int len, int stride) {
         int first = *(ptr + i * stride);           // 第一个数
         int second = *(ptr + (i + 1) * stride);    // 第二个数
         int third = *(ptr + (i + 2) * stride);     // 第三个数
-        
+
+        // 既有斐波那契规则判断，又包含了 guard check (越界检查)
+        // 当越界时，third==first+second 的概率几乎为0
         if (third != first + second) {
             return false;
         }

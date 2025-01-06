@@ -23,13 +23,17 @@ struct Tensor {
     }
 
     // 为了保持简单，禁止复制和移动
-    Tensor(Tensor const &) = delete;
+    // = delete 是 C++11 的新特性，用于禁用某个函数，任何尝试调用这个函数的行为都会导致编译错误
+    Tensor(Tensor const&) = delete;
     Tensor(Tensor &&) noexcept = delete;
 
-    T &operator[](unsigned int const indices[N]) {
+    T& operator[](unsigned int const indices[N]) {
+        std::cout << "non-const" << std::endl;
         return data[data_index(indices)];
     }
-    T const &operator[](unsigned int const indices[N]) const {
+    // 这是一个常量版本的运算符重载，意味着调用这个运算符的对象不能被修改
+    T const& operator[](unsigned int const indices[N]) const {
+        std::cout <<"const" << std::endl;
         return data[data_index(indices)];
     }
 
@@ -49,10 +53,10 @@ private:
 int main(int argc, char **argv) {
     {
         unsigned int shape[]{2, 3, 4, 5};
-        auto tensor = Tensor<4, int>(shape);
+        auto tensor = Tensor<4, int>(shape);    // 加<4, int>是因为这里的N和T都是模板参数，需要指定具体的类型
 
-        unsigned int i0[]{0, 0, 0, 0};
-        tensor[i0] = 1;
+        unsigned int i0[]{0, 0, 0, 0};  // 4维数组的索引
+        tensor[i0] = 1;                 // 转换为一维数组的索引
         ASSERT(tensor[i0] == 1, "tensor[i0] should be 1");
         ASSERT(tensor.data[0] == 1, "tensor[i0] should be 1");
 

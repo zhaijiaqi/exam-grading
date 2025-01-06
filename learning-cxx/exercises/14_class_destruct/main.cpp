@@ -23,7 +23,7 @@ public:
 
     // TODO: 实现析构器，释放缓存空间
     ~DynFibonacci() {
-        delete[] cache;
+        delete[] cache; // 释放的是一个对象数组，需要使用 delete[]
     };
 
     // TODO: 实现正确的缓存优化斐波那契计算
