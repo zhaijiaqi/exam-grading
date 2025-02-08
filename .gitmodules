@@ -3,4 +3,4 @@
 	url = https://github.com/KyeeHuang/learning-lm-rs
 [submodule "TinyInfiniTensor"]
 	path = TinyInfiniTensor
-	url = git@github.com:zhaijiaqi/TinyInfiniTensor.git
+	url = git@github.com:KyeeHuang/TinyInfiniTensor.git
